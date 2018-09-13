@@ -8,7 +8,7 @@ class ServiceArea(models.Model):
     price = models.DecimalField(max_digits=10, decimal_places=2)
     provider = models.ForeignKey(Provider)
 
-    area = models.PolygonField(srid=4326, geography=True)
+    area = models.PolygonField(srid=4326)
     objects = models.GeoManager()
 
     class Meta:

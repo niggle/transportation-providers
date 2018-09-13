@@ -8,3 +8,8 @@ class ProviderListCreateView(generics.ListCreateAPIView):
     queryset = Provider.objects.all()
     serializer_class = ProviderSerializer
 
+
+class ProviderRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Provider.objects.all()
+    serializer_class = ProviderSerializer
+

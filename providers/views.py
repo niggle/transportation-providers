@@ -29,4 +29,3 @@ class ProviderRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
     """
     queryset = Provider.objects.all()
     serializer_class = ProviderSerializer
-

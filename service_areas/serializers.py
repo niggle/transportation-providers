@@ -4,8 +4,6 @@ from rest_framework_gis.serializers import GeoFeatureModelSerializer
 from service_areas.models import ServiceArea
 
 
-# area geojson format
-#  '{"type":"Polygon","coordinates":[[[-6.0, 40.0],[-5.0, 40.0],[-5.0, 38.0],[-7.0, 37.0],[-6.0, 40.0]]]}'
 class ServiceAreaSerializer(GeoFeatureModelSerializer):
     provider_name = serializers.SerializerMethodField()
 

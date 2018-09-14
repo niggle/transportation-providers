@@ -64,14 +64,7 @@ class ProviderRetrieveUpdateDestroy(APITestCase):
             'currency_id': 1
 
         }
-        dummy_data_2 = {
-            'name': 'test2',
-            'email': 'tes21@test.com',
-            'phone': '123-123',
-            'language_id': 1,
-            'currency_id': 1
 
-        }
         self.dummy_data_json = {
             'name': 'test_json',
             'email': 'test_json@test.com',
@@ -81,7 +74,6 @@ class ProviderRetrieveUpdateDestroy(APITestCase):
 
         }
         Provider.objects.create(**dummy_data_1)
-        # Provider.objects.create(**dummy_data_2)
 
     def test_can_retrieve(self):
         obj_list = Provider.objects.get(pk=1)

@@ -6,6 +6,7 @@ from core.models import Language, Currency
 from providers.models import Provider
 from service_areas.models import ServiceArea
 
+
 class ServiceAreaTestCase(TestCase):
     def setUp(self):
         self.name = 'Test'
